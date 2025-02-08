@@ -38,5 +38,10 @@ router.post("/POST1", (req, res) => {
   console.log("Enviada primera petición al POST");
   res.send("Es la primera ruta con POST!");
 });
+//Segunda ruta POST
+router.post("/POST2", (req, res) => {
+  console.log("Hola desde POST2");
+  res.send("Es la segunda ruta con POST!");
+});
 
 module.exports = router;
