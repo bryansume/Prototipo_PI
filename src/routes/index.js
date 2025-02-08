@@ -33,4 +33,10 @@ router.get("/ruta5", (req, res) => {
   res.send("Hola desde la quinta ruta");
 });
 
+//Creación de la primera ruta con POST
+router.post("/POST1", (req, res) => {
+  console.log("Enviada primera petición al POST");
+  res.send("Es la primera ruta con POST!");
+});
+
 module.exports = router;
