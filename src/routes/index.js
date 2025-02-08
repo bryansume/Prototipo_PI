@@ -48,5 +48,15 @@ router.post("/POST3", (req, res) => {
   console.log("Nueva ruta POST");
   res.send("Buenas tardes");
 });
+//Cuarta ruta POST
+router.post("/POST4", (req, res) => {
+  console.log("Esta es la cuarta ruta POST");
+  res.send("Buenas noches");
+});
+//Quinta ruta POST
+router.post("/POST5", (req, res) => {
+  console.log("POST funciona correctamente en MAC");
+  res.send("Hola desde POST corriendo en la MANZANITA");
+});
 
 module.exports = router;
