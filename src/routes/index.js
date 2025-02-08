@@ -58,5 +58,14 @@ router.post("/POST5", (req, res) => {
   console.log("POST funciona correctamente en MAC");
   res.send("Hola desde POST corriendo en la MANZANITA");
 });
+//Ruta con body/request
+router.post("/POSTbody", (req, res) => {
+  req.body = "Cosas con requqest";
+  console.log(req.body);
+  res.json({
+    saludo: "Hola desde JSON",
+    nombre: "Bryan",
+  });
+});
 
 module.exports = router;
