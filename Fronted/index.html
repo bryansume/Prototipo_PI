@@ -8,6 +8,36 @@
   <body>
     <header>
       <h1>Datos del cliente</h1>
+      <h2>Introduzca sus datos a continuación</h2>
     </header>
+    <form action="" method="post">
+      <fieldset>
+        <legend>Datos personales</legend>
+        <label for="Nombre"
+          >Nombre <input type="text" name="Nombre" required
+        /></label>
+        <label for="Apellidos">Apellidos </label
+        ><input type="text" name="Nombre" /> <label for="Edad">Edad </label
+        ><input type="number" name="Edad" /><br />
+        <label for="Sexo">Sexo </label><input name="Sexo" list="Sexo" />
+        <datalist id="Sexo">
+          <option value="Masculino"></option>
+          <option value="Femenino"></option>
+          <option value="No sé"></option>
+        </datalist>
+      </fieldset>
+      <fieldset>
+        <legend>Datos de contacto</legend>
+        <label for="Email">Email </label><input type="email" name="Email" />
+        <label for="Telefono">Teléfono </label
+        ><input type="email" name="Email" />
+      </fieldset>
+      <fieldset>
+        <legend>Descripción personal</legend>
+        Introduce una breve descripción sobre ti <br />
+        <label for="Descripción"></label
+        ><input type="text" name="Descripción" />
+      </fieldset>
+    </form>
   </body>
 </html>
