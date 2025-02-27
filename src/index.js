@@ -2,9 +2,14 @@ const express = require("express");
 const app = express();
 const morgan = require("morgan");
 
+//Settings
 app.set("port", process.env.PORT || 8080);
-app.use(morgan("dev"));
 
+//Middelware
+app.use(morgan("dev"));
+app.use(express.urlencoded({ extended: false }));
+
+//Iniciar el servidor
 app.listen(app.get("port"), () => {
   console.log("Hola desde el puerto " + app.get("port"));
 });
