@@ -19,7 +19,6 @@ router.post("/POST1", (req, res) => {
 router.post("/POST_Formulario", (req, res) => {
   //Esto se verá en el Frontend
   res.send("Se ha enviado los datos correctamente");
-  res.send("Puede cerrar esta ventana");
   //Esto veremos nosotros en el Backend-Terminal
   console.log(req.body);
 });
