@@ -3,7 +3,7 @@ const router = Router();
 
 //Ruta con Get
 router.get("/GET_Formulario", (req, res) => {
-  console.log(req.body);
+  console.log("Hola desde formularioGET");
   res.send("Datos enviados del formulario con GET");
 });
 
