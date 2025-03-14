@@ -3,51 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo.css" />
     <title>Formulario para Proyecto Intermodular</title>
   </head>
   <body>
     <header>
       <h1>Datos del cliente</h1>
-      <h2>Introduzca sus datos a continuación</h2>
     </header>
-    <form
-      action="https://prototipo-backend-node.onrender.com/POST_Formulario"
-      method="post"
-    >
-      <fieldset>
-        <legend>Datos personales</legend>
-        <label for="Nombre"
-          >Nombre <input type="text" name="Nombre" required
-        /></label>
-        <label for="Apellidos">Apellidos </label
-        ><input type="text" name="Apellidos" /> <label for="Edad">Edad </label
-        ><input type="number" name="Edad" /><br />
-        <label for="Sexo">Sexo </label><input name="Sexo" list="Sexo" />
-        <datalist id="Sexo">
-          <option value="Masculino"></option>
-          <option value="Femenino"></option>
-          <option value="No sé"></option>
-        </datalist>
-      </fieldset>
-      <fieldset>
-        <legend>Datos de contacto</legend>
-        <label for="Email">Email </label><input type="email" name="Email" />
-        <label for="Telefono">Teléfono </label
-        ><input type="text" name="Telefono" />
-      </fieldset>
-      <fieldset>
-        <legend>Descripción personal</legend>
-        <br />
-        <label for="descripcion"></label>
-        <textarea
-          name="Descripcion"
-          rows="4"
-          cols="50"
-          placeholder="Escribe aquí tu descripción..."
-        ></textarea>
-      </fieldset>
-      <input type="submit" value="Aceptar" name="Aceptar" />
-      <input type="reset" value="Restablecer datos" name="Restablecer datos" />
-    </form>
+    <div class="agrupar">
+      <form
+        action="https://prototipo-backend-node.onrender.com/POST_Formulario"
+        method="post"
+      >
+        <h2>Formulario "POST"</h2>
+        <fieldset>
+          <legend>Datos personales</legend>
+          <label for="Nombre"
+            >Nombre <input type="text" name="Nombre" required
+          /></label>
+          <label for="Apellidos">Apellidos </label
+          ><input type="text" name="Apellidos" /> <label for="Edad">Edad </label
+          ><input type="number" name="Edad" /><br />
+          <label for="Sexo">Sexo </label><input name="Sexo" list="Sexo" />
+          <datalist id="Sexo">
+            <option value="Masculino"></option>
+            <option value="Femenino"></option>
+            <option value="No sé"></option>
+          </datalist>
+        </fieldset>
+        <fieldset>
+          <legend>Datos de contacto</legend>
+          <label for="Email">Email </label><input type="email" name="Email" />
+          <label for="Telefono">Teléfono </label
+          ><input type="text" name="Telefono" />
+        </fieldset>
+        <fieldset>
+          <legend>Descripción personal</legend>
+          <br />
+          <label for="descripcion"></label>
+          <textarea
+            name="Descripcion"
+            rows="4"
+            cols="50"
+            placeholder="Escribe aquí tu descripción..."
+          ></textarea>
+        </fieldset>
+        <input type="submit" value="Aceptar" name="Aceptar" />
+        <input
+          type="reset"
+          value="Restablecer datos"
+          name="Restablecer datos"
+        />
+      </form>
+    </div>
+    <div class="agrupar">
+      <form
+        action="https://prototipo-backend-node.onrender.com/POST_Formulario"
+        method="get"
+      >
+        <h2>Formulario "GET"</h2>
+        <fieldset>
+          <legend>Datos personales</legend>
+          <label for="Nombre"
+            >Nombre <input type="text" name="Nombre" required
+          /></label>
+          <label for="Apellidos">Apellidos </label
+          ><input type="text" name="Apellidos" /> <label for="Edad">Edad </label
+          ><input type="number" name="Edad" /><br />
+          <label for="Sexo">Sexo </label><input name="Sexo" list="Sexo" />
+          <datalist id="Sexo">
+            <option value="Masculino"></option>
+            <option value="Femenino"></option>
+            <option value="No sé"></option>
+          </datalist>
+        </fieldset>
+        <fieldset>
+          <legend>Datos de contacto</legend>
+          <label for="Email">Email </label><input type="email" name="Email" />
+          <label for="Telefono">Teléfono </label
+          ><input type="text" name="Telefono" />
+        </fieldset>
+        <fieldset>
+          <legend>Descripción personal</legend>
+          <br />
+          <label for="descripcion"></label>
+          <textarea
+            name="Descripcion"
+            rows="4"
+            cols="50"
+            placeholder="Escribe aquí tu descripción..."
+          ></textarea>
+        </fieldset>
+        <input type="submit" value="Aceptar" name="Aceptar" />
+        <input
+          type="reset"
+          value="Restablecer datos"
+          name="Restablecer datos"
+        />
+      </form>
+    </div>
   </body>
 </html>
