@@ -8,7 +8,7 @@ router.get("/GET_Formulario", (req, res) => {
 });
 
 //Ruta Get para Unity y conectada con Render (mi servidor)
-router.get("GET_Unity", (req, res) => {
+router.get("/GET_Unity", (req, res) => {
   res.send("Has pulsado el botón en Unity");
   console.log(req.query);
 });
