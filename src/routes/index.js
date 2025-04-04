@@ -1,5 +1,6 @@
 const { Router } = require("express");
 const router = Router();
+router.use(express.json());
 
 //Ruta con Get para el formulario en HTML en web
 router.get("/GET_Formulario", (req, res) => {
