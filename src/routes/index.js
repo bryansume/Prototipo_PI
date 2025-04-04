@@ -1,9 +1,15 @@
 const { Router } = require("express");
 const router = Router();
 
-//Ruta con Get
+//Ruta con Get para el formulario en HTML en web
 router.get("/GET_Formulario", (req, res) => {
   res.send("Datos enviados del formulario con GET");
+  console.log(req.query);
+});
+
+//Ruta Get para Unity y conectada con Render (mi servidor)
+router.get("GET_Unity", (req, res) => {
+  res.send("Has pulsado el botón en Unity");
   console.log(req.query);
 });
 
